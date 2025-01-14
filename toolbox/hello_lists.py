@@ -1,8 +1,8 @@
 import random
 
 numbers = []
-odd_numbers =[]
-even_numbers =[]
+# odd_numbers =[]
+# even_numbers =[]
 grades = []
 
 #generate 10 random numbers from 1-100 and add them to the list 
@@ -16,12 +16,14 @@ split_list = input('Do you want to split to odd and even numbers? ').lower()
 
 if split_list == 'yes':
 # detecting odd and even numbers!
-    for number in numbers:
-        if number % 2 == 0:
-            even_numbers.append(number)
-        else:
-            odd_numbers.append(number)
-    print(f'This is a list of even\n {even_numbers}\n and this is a list of odds \n {odd_numbers}')
+    # for number in numbers:
+    #     if number % 2 == 0:
+    #         even_numbers.append(number)
+    #     else:
+    #         odd_numbers.append(number)
+    even_numbers = [x for x in numbers if x % 2 == 0] #list comprehension
+    odd_numbers = [x for x in numbers if x % 2 != 0]
+    print(f'This is a list of even numbers:\n {even_numbers}\n and this is a list of odd numbers: \n {odd_numbers}')
 
 grading = input('Do you want to covert the list to A-F grading scale? ').lower()
 
