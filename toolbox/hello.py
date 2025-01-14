@@ -29,4 +29,3 @@ print(f' Our new facts are: \n\t 1-{facts[0]}\n\t 2-{facts[1]}.')
 
 
 
-
