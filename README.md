@@ -29,7 +29,7 @@ The repository currently contains a simple **Hello World** script as a starting 
 
 I am documenting my learning process, including challenges and successes, on my blog. Follow along for detailed walkthroughs and insights:
 
-- **Blog:** [My Learning Journey on Medium](https://medium.com/@mohallahham)
+- **Blog:** [My Learning Journey on CodingTides](https://codingtides.com)
 
 Feel free to engage, leave feedback, and share your thoughts!
 
