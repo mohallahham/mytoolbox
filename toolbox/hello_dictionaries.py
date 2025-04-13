@@ -65,3 +65,39 @@ questions = [
         "type": "open",
     },
 ]
+
+score = 0
+
+for q in questions:
+    print(f"\n{q['question']}")
+
+    if q["type"] == "mcq":
+        for option in q["options"]:
+            print(option)
+        user_answer = (
+            input("Please select the correct answer A,B,C,D \n").strip().upper()
+        )
+        if user_answer == q["answer"]:
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Sorry, correct answer was {q['answer']}\n")
+
+    elif q["type"] == "open":
+        user_answer = input("Your Answer is... \n").strip().lower()
+        correct = q["answer"]
+
+        if isinstance(correct, list):
+            if user_answer in correct:
+                print("Correct!\n")
+                score += 1
+            else:
+                print(f"Sorry, correct answers were: {', '.join(correct)}\n")
+        else:
+            if user_answer == correct:
+                print("Correct!\n")
+                score += 1
+            else:
+                print(f"Sorry, correct answer was: {correct}\n")
+
+print(f"You got {score} out of {len(questions)} correct!")
