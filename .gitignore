@@ -176,3 +176,7 @@ __pycache__/
 # Optional: macOS and editor cruft
 .DS_Store
 .vscode/
+
+# build artefacts
+*.egg-info/
+__pycache__/
