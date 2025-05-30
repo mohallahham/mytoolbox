@@ -180,3 +180,4 @@ __pycache__/
 # build artefacts
 *.egg-info/
 __pycache__/
+.DS_Store
