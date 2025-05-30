@@ -26,3 +26,9 @@ jobs:
 
       - name: Run pytest
         run: pytest
+
+      - name: Upload coverage to Coveralls
+        run: |
+          coveralls --service=github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
