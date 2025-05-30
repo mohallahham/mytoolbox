@@ -6,13 +6,16 @@ requires-python = ">=3.10"
 readme          = "README.md"
 
 [project.optional-dependencies]
+
 dev = [
     "pytest",
     "ruff",
     "black",
     "pre-commit",
-    "coverage",          # <-- Add coverage here too! (nice-to-have)
+    "coverage",
+    "coveralls",   
 ]
+
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
@@ -22,8 +25,10 @@ build-backend = "setuptools.build_meta"
 package-dir = {"" = "src"}
 
 [tool.coverage.run]
-source = ["src/mytoolbox"]    # only one [tool.coverage.run] block
+source = ["src/mytoolbox"]
+branch = true
 
 [tool.coverage.report]
 show_missing = true
 fail_under = 85
+
