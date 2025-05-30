@@ -1,6 +1,6 @@
 # MyToolbox Repository 🛠️
 
-<br>![CI](https://github.com/mohallahham/mytoolbox/actions/workflows/ci.yml/badge.svg) </br> <br>![Coverage Status](https://coveralls.io/repos/github/mohallahham/mytoolbox/actions/badge.svg)</br>
+<br>![CI](https://github.com/mohallahham/mytoolbox/actions/workflows/ci.yml/badge.svg) </br> <br>[![Coverage Status](https://coveralls.io/repos/github/mohallahham/mytoolbox/badge.svg?branch=main)](https://coveralls.io/github/mohallahham/mytoolbox?branch=main) </br>
 
 Welcome to **MyToolbox**, a curated collection of Python scripts and tools showcasing my learning journey. This repository is my sandbox for exploring Python concepts and applying them to practical problems.
 
