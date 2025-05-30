@@ -1,0 +1,21 @@
+[project]
+name            = "mytoolbox"           # the name you’ll pip-install
+version         = "0.0.1"
+description     = "Sandbox for learning Python"
+requires-python = ">=3.10"
+readme          = "README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "black",
+    "pre-commit",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]              # 🚨 tells setuptools where code lives
+package-dir = {"" = "src"}     # everything under src/ is importable
