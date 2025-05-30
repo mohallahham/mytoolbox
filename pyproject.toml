@@ -1,5 +1,5 @@
 [project]
-name            = "mytoolbox"           # the name you’ll pip-install
+name            = "mytoolbox"
 version         = "0.0.1"
 description     = "Sandbox for learning Python"
 requires-python = ">=3.10"
@@ -11,17 +11,18 @@ dev = [
     "ruff",
     "black",
     "pre-commit",
+    "coverage",          # <-- Add coverage here too! (nice-to-have)
 ]
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]              # 🚨 tells setuptools where code lives
-package-dir = {"" = "src"}     # everything under src/ is importable
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.coverage.run]
-source = ["src/mytoolbox"]
+source = ["src/mytoolbox"]    # only one [tool.coverage.run] block
 
 [tool.coverage.report]
 show_missing = true
