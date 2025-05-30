@@ -1,24 +1,41 @@
-# if a word starts with vowel just add yay to the end.
-# if a word starts with constant, move first litter and add ay to the end.
+# exercises/beginner/pig_latin.py
+"""Simple Pig-Latin translator.
 
-# user input a word
+Rules
+-----
+1. If a word starts with a vowel, add 'yay' to the end.
+2. If a word starts with a consonant, move the first letter to the end
+   and add 'ay'.
+"""
 
-vowels = ["a", "e", "i", "o", "u"]
+VOWELS = "aeiou"
 
-while True:
-    word = input(
-        "Please type a word to translate to pig latin (or type 'q' to exit): \n"
-    ).lower()
 
-    if word == "q":
-        print("Goodbye")
-        break
+def translate(word: str) -> str:
+    """Return *word* converted to Pig-Latin (lower-case for simplicity)."""
+    word = word.lower()
 
-    char_list = list(word)
+    if not word:  # guard against empty input
+        return ""
 
-    if char_list[0] in vowels:
-        print(f"{word}yay")
-    else:
-        f_letter = char_list.pop(0)
-        char_list.append(f_letter)
-        print(f"{''.join(char_list)}ay")  # need to understand this better!!
+    if word[0] in VOWELS:  # Rule 1
+        return f"{word}yay"
+
+    # Rule 2
+    return f"{word[1:]}{word[0]}ay"
+
+
+def _cli() -> None:
+    """Interactive prompt."""
+    while True:
+        word = input("Type a word to translate to Pig-Latin (or 'q' to quit): ").strip()
+
+        if word.lower() == "q":
+            print("Goodbye!")
+            break
+
+        print(translate(word))
+
+
+if __name__ == "__main__":  # only runs on  `python pig_latin.py`
+    _cli()
