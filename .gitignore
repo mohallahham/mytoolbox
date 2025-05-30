@@ -169,3 +169,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# ==== Python build artifacts ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+# Optional: macOS and editor cruft
+.DS_Store
+.vscode/
