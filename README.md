@@ -1,6 +1,4 @@
-# MyToolbox Repository 🛠️
-
-<br>![CI](https://github.com/mohallahham/mytoolbox/actions/workflows/ci.yml/badge.svg)<br>
+# MyToolbox Repository 🛠️ <br>![CI](https://github.com/mohallahham/mytoolbox/actions/workflows/ci.yml/badge.svg)<br>
 
 Welcome to **MyToolbox**, a curated collection of Python scripts and tools showcasing my learning journey. This repository is my sandbox for exploring Python concepts and applying them to practical problems.
 
