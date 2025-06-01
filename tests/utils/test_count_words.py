@@ -1,4 +1,4 @@
-from mytoolbox.utils.word_counter import count_words
+from mytoolbox.utils.word_counter import count_words, remove_punctuations
 
 
 def test_capital_normalization():
@@ -7,3 +7,7 @@ def test_capital_normalization():
 
 def test_empty_text():
     assert count_words("") == {}
+
+
+def test_remove_punctuations():
+    assert remove_punctuations("hello, world!") == "hello world"

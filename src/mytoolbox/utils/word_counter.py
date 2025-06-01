@@ -1,5 +1,4 @@
-#
-# * Goal
+# #* Goal
 # word_counts("hello world hello")
 # Output: {'hello': 2, 'world': 1}
 
@@ -12,7 +11,15 @@
 
 # "The quick brown fox jumps over the lazy dog. A fox is quick and sly; the dog, however, is lazy and slow."
 # text = "This is a text Text and text"
-text = "hello world hello"
+import string
+
+text = "hello, world hello"
+
+
+def remove_punctuations(text):
+    translator = str.maketrans("", "", string.punctuation)
+    text = text.translate(translator)
+    return text
 
 
 def count_words(text):
@@ -27,4 +34,6 @@ def count_words(text):
     return word_counts
 
 
-print(count_words(text))
+cleaned_text = remove_punctuations(text)
+
+print(count_words(cleaned_text))
