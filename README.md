@@ -19,7 +19,9 @@ This repository is inspired by the following resources:
 
 ## 🚧 Current Contents
 
-At the moment, MyToolbox includes basic scripts, a foundational starting point. New tools and projects will be added soon, each with detailed documentation.
+## Utilities
+
+- **Word Counter**: Count words, remove punctuation, and sort by frequency.
 
 ---
 

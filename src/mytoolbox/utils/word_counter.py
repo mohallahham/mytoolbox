@@ -1,19 +1,13 @@
-# #* Goal
-# word_counts("hello world hello")
-# Output: {'hello': 2, 'world': 1}
+"""
+Word counting utility functions:
+- remove_punctuations
+- count_words
+- sort_words_by_frequency
+"""
 
-# todo
-# !✨ Bonus Challenges
-# Bonus 1: Make it case-insensitive ("Hello" and "hello" count the same).
-# Bonus 2: Remove basic punctuation (,, ., !, etc.).
-# Bonus 3: Return the dictionary sorted by the most frequent words.
-# Bonus 4: Add an optional stop word to remove or keep
-
-# "The quick brown fox jumps over the lazy dog. A fox is quick and sly; the dog, however, is lazy and slow."
-# text = "This is a text Text and text"
 import string
 
-text = "hello, world hello"
+text = "The quick brown fox jumps over the lazy dog. A fox is quick and sly; the dog, however, is lazy and slow."
 
 
 def remove_punctuations(text):
@@ -34,6 +28,15 @@ def count_words(text):
     return word_counts
 
 
-cleaned_text = remove_punctuations(text)
+def sort_words_by_frequency(word_counts):
+    sorted_word_counts = sorted(
+        word_counts.items(), key=lambda item: item[1], reverse=True
+    )
+    return sorted_word_counts
 
-print(count_words(cleaned_text))
+
+cleaned = remove_punctuations(text)
+words = count_words(cleaned)
+sorted_words = sort_words_by_frequency(words)
+
+print(sorted_words)
