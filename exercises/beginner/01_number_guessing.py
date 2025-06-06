@@ -1,19 +1,27 @@
 import random
 
 
+def get_user_input():
+    while True:
+        try:
+            user_guess = int(
+                input("What is your guess, it's a number between 1 and 100 ? ")
+            )
+            return user_guess
+
+        except ValueError:
+            print("Please enter a valid number")
+
+
 def guessing_game():
     number = random.randint(1, 100)
     attempts = 10
 
     while attempts > 0:
         print(f"you have {attempts} guesses left")
-        try:
-            user_guess = int(
-                input("What is your guess, it's a number between 1 and 100 ? ")
-            )
-        except ValueError:
-            print("please input a number")
-            continue
+
+        user_guess = get_user_input()
+
         if user_guess == number:
             print(f" Yes, {number} was the correct number")
             break
