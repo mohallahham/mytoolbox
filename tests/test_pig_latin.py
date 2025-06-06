@@ -10,7 +10,7 @@ from pathlib import Path
 import importlib.util
 import sys
 
-MODULE_PATH = Path(__file__).parents[1] / "exercises" / "beginner" / "pig_latin.py"
+MODULE_PATH = Path(__file__).parents[1] / "exercises" / "beginner" / "99_pig_latin.py"
 
 spec = importlib.util.spec_from_file_location("pig_latin", str(MODULE_PATH))
 pig_latin = importlib.util.module_from_spec(spec)  # create empty module
