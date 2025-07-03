@@ -1,4 +1,8 @@
-word = "hello"
+import random
+
+with open("random_words.txt", "r") as file:
+    word_list = [line.strip() for line in file]
+word = random.choice(word_list)
 letters = []
 guessed_letters = []
 lives = len(word) + 1
@@ -11,7 +15,7 @@ print("Can you guess the following word?")
 
 while True:
     if lives == 0:
-        print("sorry you have lost")
+        print(f"sorry you have lost, and the word was {word}")
         break
     else:
         print(" ".join(letters))
