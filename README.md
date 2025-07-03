@@ -14,6 +14,8 @@ This repository is inspired by the following resources:
 - _Python Distilled_ by David Beazley: A deep dive into Python's core principles.
 - _Impractical Python Projects_ by Lee Vaughan: Creative and fun problem-solving with Python.
 - _Grokking Algorithms_ by Aditya Bhargava: Visual and approachable algorithm explanations.
+- _Python Workout_ by Reuven M. Lerner: 50 ten-minute exercises.
+
 
 ---
 
@@ -22,13 +24,6 @@ This repository is inspired by the following resources:
 ## Utilities
 
 - **Word Counter**: Count words, remove punctuation, and sort by frequency.
-
----
-
-## 🚀 What’s Next?
-
-- Adding tools and scripts to explore Python fundamentals and advanced concepts.
-- Creating real-world projects for data analysis, automation, and visualization.
 
 ---
 
