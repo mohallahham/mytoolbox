@@ -1,7 +1,6 @@
-# print(*letters) unpacking option
-
 word = "hello"
 letters = []
+guessed_letters = []
 lives = len(word) + 1
 
 for _ in word:
@@ -16,6 +15,7 @@ while True:
         break
     else:
         print(" ".join(letters))
+        print(f"Guessed Letters : {' '.join(guessed_letters)}")
         print(f"you have {lives} chances")
         guess = input("Guess a letter ")
 
@@ -27,8 +27,12 @@ while True:
                 if letter == guess:
                     letters[index] = guess
 
+        elif guess in guessed_letters:
+            print(f"You have already guessed {guess}.")
+
         else:
             lives -= 1
+            guessed_letters.append(guess)
 
         if "_" not in letters:
             print("You have won")
