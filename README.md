@@ -27,13 +27,6 @@ This repository is inspired by the following resources:
 
 ---
 
-## 🚀 What’s Next?
-
-- Adding tools and scripts to explore Python fundamentals and advanced concepts.
-- Creating real-world projects for data analysis, automation, and visualization.
-
----
-
 ## 📝 Follow My Journey
 
 I document every step of my learning journey, including challenges and triumphs, on my blog: [CodingTides](https://codingtides.com).
