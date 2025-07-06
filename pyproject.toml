@@ -25,10 +25,14 @@ build-backend = "setuptools.build_meta"
 package-dir = {"" = "src"}
 
 [tool.coverage.run]
-source = ["src/mytoolbox"]
+source = ["src/mytoolbox/utils"]
 branch = true
+
 
 [tool.coverage.report]
 show_missing = true
 fail_under = 85
+include = ["src/mytoolbox/utils/*.py"]
+
+
 
