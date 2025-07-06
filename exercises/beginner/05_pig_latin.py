@@ -1,4 +1,4 @@
-word = input("Enter a word to translate to pig latin ").lower()
+from mytoolbox.utils.cli_utlis import prompt_input
 
 
 def pig_latin(word):
@@ -7,4 +7,6 @@ def pig_latin(word):
     return f"{word[1:]}{word[0]}ay"
 
 
-print(pig_latin(word))
+while True:
+    word = prompt_input("Type a word to translate to Pig-Latin (or 'q' to quit): ")
+    print(pig_latin(word))
