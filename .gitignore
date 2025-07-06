@@ -44,17 +44,26 @@ docs/_build/
 ###############################################################################
 .DS_Store
 .vscode/
-.idea/          # comment out if you *do* want JetBrains files in VCS
+.idea/  # comment out if you *do* want JetBrains files in VCS
 
 ###############################################################################
 # Misc. tooling caches
 ###############################################################################
 .mypy_cache/
+.pyre/
+.pytype/
+cython_debug/
+
+###############################################################################
+# PDM (Python Development Master)
+###############################################################################
 .pdm.toml
 .pdm-python
 .pdm-build/
 .pdm.lock
 .pdm/
-.pyre/
-.pytype/
-cython_debug/
+
+###############################################################################
+# Node.js tooling (for Commitizen, etc.)
+###############################################################################
+node_modules/

@@ -1,0 +1,25 @@
+{
+  "name": "mytoolbox",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/mohallahham/mytoolbox/actions/workflows/ci.yml/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/mohallahham/mytoolbox/badge.svg?branch=main)](https://coveralls.io/github/mohallahham/mytoolbox?branch=main)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
