@@ -16,7 +16,6 @@ This repository is inspired by the following resources:
 - _Grokking Algorithms_ by Aditya Bhargava: Visual and approachable algorithm explanations.
 - _Python Workout_ by Reuven M. Lerner: 50 ten-minute exercises.
 
-
 ---
 
 ## 🚧 Current Contents
@@ -24,6 +23,7 @@ This repository is inspired by the following resources:
 ## Utilities
 
 - **Word Counter**: Count words, remove punctuation, and sort by frequency.
+- **cli_utlis**: collection of frequency used cli functions
 
 ---
 
