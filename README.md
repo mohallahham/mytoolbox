@@ -35,7 +35,7 @@ I document every step of my learning journey, including challenges and triumphs,
 
 ## 📫 Contact
 
-- **Email**: [moh.allahham@gmail.com](mailto:moh.allahham@gmail.com)
+- **Email**: [mohallahham@gmail.com](mailto:moh.allahham@gmail.com)
 - **GitHub**: [mohallahham](https://github.com/mohallahham)
 
 Thank you for visiting MyToolbox! 🌟
